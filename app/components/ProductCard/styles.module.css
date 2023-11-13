@@ -1,0 +1,167 @@
+.product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    padding: 16px;
+    position: relative;
+    font-size: 14px;
+    flex: 1;
+    font-size: 12px;
+    gap: 0;
+    flex-direction: column;
+    flex: 0 0 268px;
+    width: 268px;
+    height: 360px;
+}
+
+.full-card {
+    display: flex;
+    gap: 30px;
+    padding: 16px;
+    position: relative;
+    font-size: 14px;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.thumbs {
+    display: flex;
+    gap: 30px;
+}
+
+.thumb {
+    cursor: pointer;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    padding: 2px;
+}
+
+.thumb.selected {
+    border: 3px solid #46760a;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-shrink: 0;
+}
+
+.addinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex: 1;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+}
+
+.product-card__image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.full-image {
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 400px;
+    width: 100%;
+}
+
+
+
+.product-card__discount {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-weight: 600;
+    background-color: #f4f8ec;
+    color: #6a983c;
+    padding: 0px 8px;
+    border-radius: 12px;
+}
+
+.product-card__info {
+    flex: 1;
+}
+
+.card-info__title {
+    font-size: 1.25em;
+    margin: 10px 0 4px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.description {
+    margin: 0;
+    color: #575757;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.full-desc {
+    margin: 0;
+    color: #575757;
+    text-transform: capitalize;
+    overflow: hidden;
+    flex: 1;
+}
+
+.card-info__rating {
+    mask-image: url("/icons/rating-star.svg");
+    mask-repeat: repeat-x;
+    -webkit-mask-image: url("/icons/rating-star.svg");
+    -webkit-mask-repeat: repeat-x;
+    width: 90px;
+    height: 16px;
+    margin-top: 13px;
+}
+
+.card-info__lowstock {
+    color: rgb(152, 45, 45);
+}
+
+
+.card-pricing__discounted {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-pricing__original {
+    margin: 0;
+    color: #a9a9a9;
+    text-decoration: line-through;
+}
+
+.card-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    font-family: "Poppins";
+    font-weight: 700;
+    background-color: #6a983c;
+    border: 2px solid #46760a;
+    font-size: 15px;
+    border-radius: 12px;
+    color: #fff;
+    padding: 0 12px;
+    height: 40px;
+    cursor: pointer;
+}
